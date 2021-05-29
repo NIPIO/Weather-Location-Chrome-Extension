@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 5px;
+        font-family: 'Helvetica', Courier, monospace;
+        background-image: url('bground.jpg');
+        font-weight: 300;
+    }
+
+    h1 {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    #climaImg {
+        height: 39px;
+    }
+    table thead {
+        font-weight: 600;
+    }
+</style>
+<body>
+    <div id="cargando">
+    </div>
+    <div id="infoDiv" style="display: none;">
+        <div style="width: 300px; height:20px; display:flex">
+            <span id="barrio"></span>
+        </div>    
+        <div style="width: 300px; height:50px; display:flex;">
+            <div style="width: 75%;">
+                <div style="font-weight: 600;font-size: initial;">
+                    <span id="temperatura" ></span>
+                    <span id="stermica"></span>
+                </div>
+                <div style=" height:10px; font-size: revert;">
+                    <span id="minTemp"></span>
+                    <span id="maxTemp"></span>
+                </div>
+            </div>
+            <div style="width: 25%;" >
+                <img src="" alt="" id="climaImg">
+            </div>
+        </div>
+
+
+        <div style="width: 300px; height:50px;">
+            <table style="text-align: center; width: 100%;">
+                <thead>
+                    <td>Humedad</td>
+                    <td>Presion</td>
+                    <td>Viento</td>
+                </thead>
+                <tbody>
+                    <td id="humedad"></td>
+                    <td id="presion"></td>
+                    <td id="viento"></td>
+                </tbody>
+            </table>
+            <!-- <table style="text-align: center; width: 100%; margin-top:10px">
+                <thead>
+                    <td>Amanecer</td>
+                    <td>Atardecer</td>
+                </thead>
+                <tbody>
+                    <td id="amanecer"></td>
+                    <td id="atardecer"></td>
+                </tbody>
+            </table> -->
+
+        </div>
+    </div>
+    <p id="divDatos">
+
+    </p>
+</body>
+<script src="popup.js"></script>
+</html>
